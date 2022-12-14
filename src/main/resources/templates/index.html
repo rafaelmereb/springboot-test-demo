@@ -1,0 +1,213 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../static/img/form.png" type="image/png">
+    <title>QA Form</title>
+
+    <link rel="stylesheet" href="../static/css/styles.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap">
+    <script src="../static/js/script.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+
+<div class="content rounded">
+
+    <div>
+        <h1 id="title" class="title">QA Form</h1>
+        <p id="subtitle" class="subtitle">Share your info!</p>
+    </div>
+
+    <form class="form" method="post">
+
+        <fieldset class="fieldset">
+            <div class="field">
+                <label for="name"><strong>First Name</strong></label>
+                <input class="custom-input rounded" type="text" name="name" id="name" required/>
+            </div>
+
+            <div class="field">
+                <label for="lastName"><strong>Last Name</strong></label>
+                <input class="custom-input rounded" type="text" name="lastName" id="lastName" required/>
+            </div>
+
+            <div class="field">
+                <label for="email"><strong>Email</strong></label>
+                <input class="custom-input rounded" type="email" name="email" id="email" required/>
+            </div>
+        </fieldset>
+
+        <fieldset class="fieldset">
+            <p><strong>Sex:</strong></p>
+
+            <div class="box-select">
+                <div class="field">
+                    <input class="custom-checkbox rounded" type="radio" id="m" name="sex" value="m" required/>
+                    <label for="m">Male</label>
+                </div>
+
+                <div class="field">
+                    <input class="custom-checkbox rounded" type="radio" id="f" name="sex" value="f"/>
+                    <label for="f">Female</label>
+                </div>
+
+                <div class="field">
+                    <input class="custom-checkbox rounded" type="radio" id="o" name="sex" value="o"/>
+                    <label for="o">Other</label>
+                </div>
+            </div>
+
+        </fieldset>
+
+        <fieldset class="fieldset">
+            <div class="field">
+                <p><strong>Which side of an application do you develop?</strong></p>
+
+                <div class="box-select">
+                    <div class="field">
+                        <input class="custom-checkbox rounded" id="frontend" type="radio" name="developerType"
+                               value="frontend" required/>
+                        <label for="frontend">Front-end</label>
+                    </div>
+
+                    <div class="field">
+                        <input class="custom-checkbox rounded" id="backend" type="radio" name="developerType"
+                               value="backend"/>
+                        <label for="backend">Back-end</label>
+                    </div>
+
+                    <div class="field">
+                        <input class="custom-checkbox rounded" id="fullstack" type="radio" name="developerType"
+                               value="fullstack"/>
+                        <label for="fullstack">Fullstack</label>
+                    </div>
+
+                    <div class="field">
+                        <input class="custom-checkbox rounded" id="none" type="radio" name="developerType"
+                               value="none"/>
+                        <label for="none">None</label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="fieldset">
+            <p><strong>What types of tests do you perform?</strong></p>
+            <div id="check" class="box-select">
+                <div class="field">
+                    <input type="checkbox" id="testType1" name="performedTests" value="Manual"/>
+                    <label for="testType1">Manual</label>
+                </div>
+                <div class="field">
+                    <input type="checkbox" id="testType2" name="performedTests" value="Exploratory"/>
+                    <label for="testType2">Exploratory</label>
+                </div>
+                <div class="field">
+                    <input type="checkbox" id="testType3" name="performedTests" value="Unit"/>
+                    <label for="testType3">Unit</label>
+                </div>
+                <div class="field">
+                    <input type="checkbox" id="testType4" name="performedTests" value="Integration"/>
+                    <label for="testType4">Integration</label>
+                </div>
+                <div class="field">
+                    <input type="checkbox" id="testType5" name="performedTests" value="Functional"/>
+                    <label for="testType5">Functional</label>
+                </div>
+                <!-- <div class="break"></div> -->
+                <div class="field">
+                    <input type="checkbox" id="testType6" name="performedTests" value="End-to-end"/>
+                    <label for="testType6">End-to-end</label>
+                </div>
+                <div class="field">
+                    <input type="checkbox" id="testType7" name="performedTests" value="Acceptance"/>
+                    <label for="testType7">Acceptance</label>
+                </div>
+                <div class="field">
+                    <input type="checkbox" id="testType8" name="performedTests" value="Performance"/>
+                    <label for="testType8">Performance</label>
+                </div>
+                <div class="field">
+                    <input type="checkbox" id="testType9" name="performedTests" value="Smoke"/>
+                    <label for="testType9">Smoke</label>
+                </div>
+                <div class="field">
+                    <input type="checkbox" id="testType10" name="performedTests" value="Regressive"/>
+                    <label for="testType10">Regressive</label>
+                </div>
+                <div class="field">
+                    <input type="checkbox" id="testType11" name="performedTests" value="None"/>
+                    <label for="testType11">None</label>
+                </div>
+                <div class="field">
+                    <input type="checkbox" id="testType12" name="performedTests" value="Other"/>
+                    <label for="testType12">Other</label>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="fieldset">
+            <div class="field">
+                <label for="seniority"><strong>Seniority:</strong></label>
+                <select id="seniority" name="seniority" class="custom-select rounded" required>
+                    <option selected value="">Choose an option:</option>
+                    <option value="Junior">Junior</option>
+                    <option value="Junior to Mid-level">Junior to Mid-level</option>
+                    <option value="Mid-level">Mid-level</option>
+                    <option value="Mid-level to Senior">Mid-level to Senior</option>
+                    <option value="Senior">Senior</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset class="fieldset">
+            <p><strong>Choose the technologies you use the most:</strong></p>
+            <div id="check" class="box-select">
+                <div class="field">
+                    <input type="checkbox" id="technology1" name="technologies" value="HTML"/>
+                    <label for="technology1">HTML</label>
+                </div>
+                <div class="field">
+                    <input type="checkbox" id="technology2" name="technologies" value="CSS"/>
+                    <label for="technology2">CSS</label>
+                </div>
+                <div class="field">
+                    <input type="checkbox" id="technology3" name="technologies" value="Javascript"/>
+                    <label for="technology3">JavaScript</label>
+                </div>
+                <div class="field">
+                    <input type="checkbox" id="technology4" name="technologies" value="PHP"/>
+                    <label for="technology4">PHP</label>
+                </div>
+                <div class="field">
+                    <input type="checkbox" id="technology5" name="technologies" value="C#"/>
+                    <label for="technology5">C#</label>
+                </div>
+                <div class="field">
+                    <input type="checkbox" id="technology6" name="technologies" value="Python"/>
+                    <label for="technology6">Python</label>
+                </div>
+                <div class="field">
+                    <input type="checkbox" id="technology7" name="technologies" value="Java"/>
+                    <label for="technology7">Java</label>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="fieldset">
+            <div class="field">
+                <label><strong>Tell us about your experience:</strong></label>
+                <textarea row="6" id="experience" name="experience" class="textarea rounded"></textarea>
+            </div>
+        </fieldset>
+
+        <button type="submit" class="custom-buttom rounded">Send</button>
+    </form>
+</div>
+</body>
+
+</html>
